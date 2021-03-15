@@ -156,7 +156,7 @@ class Page {
   // Get the default arguments for creating a page
   static getArgs() {
     const args = ['--no-sandbox', '--use-fake-ui-for-media-stream', '--window-size=1280,720', '--lang=en-US'];
-    return { headless: true, args };
+    return { headless: false, args };
   }
 
   static getArgsWithAudio() {

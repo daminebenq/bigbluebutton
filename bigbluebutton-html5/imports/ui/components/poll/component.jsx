@@ -425,6 +425,7 @@ class Poll extends Component {
               className={cx(styles.pBtn, { [styles.selectedBtn]: type === 'TF' })}
             />
             <Button
+              data-test="a4Btn"
               label={intl.formatMessage(intlMessages.a4)}
               color="default"
               onClick={() => {

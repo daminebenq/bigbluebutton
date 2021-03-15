@@ -115,11 +115,13 @@ class DragAndDrop extends Component {
         ref={this.dropRef}
       >
         <textarea
+          data-test="dragAndDropArea"
           value={pollValueText}
           className={drag ? styles.dndActive : styles.dndInActive}
           onChange={e => this.handleTextInput(e)}
         />
         <Button
+          data-test="fillPollValues"
           onClick={() => this.setPollValues()}
           label={intl.formatMessage(intlMessages.customPollTextArea)}
           color="primary"

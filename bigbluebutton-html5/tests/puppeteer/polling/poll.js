@@ -1,5 +1,7 @@
 const Page = require('../core/page');
 const utilNotification = require('../notifications/util');
+const path = require('path');
+const ple = require('./elemens');
 const { ELEMENT_WAIT_TIME, VIDEO_LOADING_WAIT_TIME } = require('../core/constants'); // core constants (Timeouts vars imported)
 
 class Polling extends Page {
