@@ -1,8 +1,6 @@
 const Page = require('../core/page');
 const params = require('../params');
 const util = require('../chat/util');
-<<<<<<< Updated upstream
-=======
 const utilCustomParams = require('../customparameters/util');
 const pe = require('../core/elements');
 const ne = require('../notifications/elements');
@@ -10,7 +8,6 @@ const ple = require('../polling/elemens');
 const path = require('path');
 const { ELEMENT_WAIT_TIME, ELEMENT_WAIT_LONGER_TIME } = require('../core/constants');
 const { sleep } = require('../core/helper');
->>>>>>> Stashed changes
 
 class MultiUsers {
   constructor() {
@@ -55,8 +52,6 @@ class MultiUsers {
     return checks.firstCheck !== false && checks.secondCheck !== false;
   }
 
-<<<<<<< Updated upstream
-=======
   async randomPoll(testName) {
     try {
       await this.page1.startRecording(testName);
@@ -193,7 +188,6 @@ class MultiUsers {
     await this.page2.stopRecording();
   }  
 
->>>>>>> Stashed changes
   // Close all Pages
   async close(page1, page2) {
     await page1.close();
